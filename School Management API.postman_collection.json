@@ -1,0 +1,71 @@
+{
+  "info": {
+    "_postman_id": "42baff52-c336-4df8-ad99-93d35a3016fb",
+    "name": "School Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39461963"
+  },
+  "item": [
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Delhi Public School\",\r\n  \"address\": \"New Delhi\",\r\n  \"latitude\": 28.6139,\r\n  \"longitude\": 77.2090\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://school-management-guyk.onrender.com/addSchool",
+          "protocol": "https",
+          "host": [
+            "school-management-guyk",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Schools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://school-management-guyk.onrender.com/listSchools?latitude=28.6139&longitude=77.2090",
+          "protocol": "https",
+          "host": [
+            "school-management-guyk",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "28.6139",
+              "type": "text"
+            },
+            {
+              "key": "longitude",
+              "value": "77.2090",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
