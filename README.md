@@ -101,3 +101,6 @@ Fetches all schools sorted by distance from the user's provided coordinates.
   ]
 }
 ```
+
+## License
+MIT - see [LICENSE](LICENSE).
